@@ -1,0 +1,15 @@
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #BDBDBD;
+}
+
+.valor{
+    color: var(--white);
+    background-color: var(--gray);
+    font-weight: bold;
+    width: 5%;
+    padding: 2%;
+    border-radius: 10%;
+    margin-top: 5%;
+}

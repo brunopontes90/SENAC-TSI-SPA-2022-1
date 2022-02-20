@@ -1,19 +1,19 @@
+import './HomeBrocker.css';
 import React from "react";
 import ReactDOM from "react";
-import './HomeBrocker.css';
 
-const valor = 210018.58
-const moeda = 'BTC'
-const variacao = 7.06;
+const bitcoin = [210018.58, 'BTC', 7.06];
 
 const HomeBrocker = () => {
-    return(
-        <div className="btc-infos">
-            <p className="valor">{valor}</p>
-            <p>{moeda}</p>
-            {variacao >= 8 ? <p>{variacao}</p> : <p>{variacao}</p>}
-        </div>
-    );
+    for(let index = 0; bitcoin.length; index++) {
+        const variation = bitcoin[2] >= 8 ? <p className="positive"> + {bitcoin[2]}</p> : <p className="negative">  - {bitcoin[2]}</p>;
+        return(
+            <div className="btc-infos">
+                <p className="value">{bitcoin[0]}</p>
+                <p className="acronym">{bitcoin[1]}</p>
+                <p className="variation">{variation}</p>
+            </div>
+        );
+    }
 }
-
 export default HomeBrocker;

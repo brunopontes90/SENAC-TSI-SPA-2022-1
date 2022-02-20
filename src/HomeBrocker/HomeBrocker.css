@@ -2,9 +2,16 @@
     --white: #FFFFFF;
     --black: #000000;
     --gray: #BDBDBD;
+    --green: #01DF01;
+    --red: #DF0101;
 }
 
-.valor{
+.btc-infos {
+    display: flex;
+    justify-content: center;
+}
+
+.value {
     color: var(--white);
     background-color: var(--gray);
     font-weight: bold;
@@ -12,4 +19,42 @@
     padding: 2%;
     border-radius: 10%;
     margin-top: 5%;
+    font-size: 20pt;
+}
+
+.acronym {
+    color: var(--white);
+    background-color: var(--black);
+    font-weight: bold;
+    width: 5%;
+    padding: 2%;
+    border-radius: 10%;
+    margin-top: 5%;
+    font-size: 20pt;
+}
+
+.negative {
+    color: var(--black);
+    background-color: var(--red);
+    padding: 10%;
+    font-weight: bold;
+    border-radius: 10%;
+    height: 48%;
+    margin-top: 75%;
+}
+
+.positive {
+    color: var(--white);
+    background-color: var(--green);
+    padding: 10%;
+    font-weight: bold;
+    border-radius: 10%;
+    height: 48%;
+    margin-top: 75%;
+}
+
+.variation {
+    /*margin-top: 5%;*/
+    font-size: 20pt;
+    width: 5%;
 }

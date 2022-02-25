@@ -8,3 +8,13 @@
 - Toda função que retorna JSX precisa começar com letra maiuscula ex: HomeBrocker (aula anterior)
 - (...developer) - Sprad operation
 - useEffect: executa toda vez que tem uma renderização de tela
+- fetch retorna uma promisse
+- Trabalho: Fazer o home bocker com os dados reais
+
+
+usar:
+baseasset
+
+se quiser brincar
+openPrice
+latPrice

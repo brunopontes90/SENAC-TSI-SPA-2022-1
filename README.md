@@ -10,11 +10,12 @@
 - useEffect: executa toda vez que tem uma renderização de tela
 - fetch retorna uma promisse
 - Trabalho: Fazer o home bocker com os dados reais
+- Dicas:
+    . usar:
+    . baseasset
+    . se quiser brincar
+    . openPrice
+    . latPrice
 
-
-usar:
-baseasset
-
-se quiser brincar
-openPrice
-latPrice
+*** 03/03/2022 ***
+- Nesta aula iremos criar um projeto de rede social, uma junção de facebook com instagram

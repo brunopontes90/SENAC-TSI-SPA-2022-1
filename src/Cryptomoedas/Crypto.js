@@ -2,32 +2,29 @@ import { React, useState, useEffect} from "react";
 import ReactDom from "react-dom";
 
 function Crypto(){
-    const [crypts, setCrypts] = useState({
-        ativo: crypts.baseAsset,
-        valorAbertura: crypts.openPrice,
-        valorFechamento: crypts.lastPrice
-    });
+    const [crypts, setCrypts] = useState([]);
 
     useEffect(() => {
         fetch('https://api.wazirx.com/sapi/v1/tickers/24hr')
             .then(res => res.json())
             .then(data =>setCrypts(data));
-    }, [crypts.ativo, crypts.valorAbertura, crypts.valorFechamento]);
+    }, []);
+
+    const handleCrypts = crypts.map((crypt) => {
+        return(
+            <p>{crypt.baseAsset}</p>
+        );
+    });
 
     function handleChangeCrypto(event){
-        setCrypts({
-            ...crypts,
-            ativo: crypts.baseAsset,
-            valorAbertura: event.target.value,
-            valorFechamento: event.target.value
-        });
-
+        console.log(crypts);
     }
 
     return(
-        !crypts ? <h1>Carregando</h1> : 
+        !crypts ? <h1>Carregando..</h1> : 
         <>
-            <p>{crypts.ativo}</p>
+            <p>{handleCrypts}</p>
+            <button onClick={handleChangeCrypto}>Evento</button>
         </>
     );
 }

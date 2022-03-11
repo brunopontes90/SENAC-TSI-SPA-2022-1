@@ -19,3 +19,6 @@
 
 *** 03/03/2022 ***
 - Nesta aula iremos criar um projeto de rede social, uma junção de facebook com instagram
+
+*** 10/03/2022 ***
+- Nesta aula aprendemos Reducer
